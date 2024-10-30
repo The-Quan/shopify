@@ -114,7 +114,7 @@
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-  {% render 'shopify' %}
+  {% section 'shopify'%}
 
   {%- if settings.enable_ajax -%}
     {% include 'cart-popup' %}
@@ -129,6 +129,7 @@
     </main>
 
     {% section 'footer' %}
+
 
     <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
       {{- 'sections.slideshow.navigation_instructions' | t -}}
